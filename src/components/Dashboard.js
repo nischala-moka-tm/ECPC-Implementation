@@ -4,7 +4,6 @@ import { FaCommentAlt, FaPhoneVolume, FaEnvelope, FaMinusCircle, FaPlusCircle, F
 import { Row, Col, Container, Navbar, Accordion, FormControl, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Header from './Header';
 import Footer from './Footer';
-import { style } from 'dom-helpers';
 const AccordionSelection = () => {
 
     const [isCommnctonsVisible, setComunicationVisible] = useState(false);
@@ -68,7 +67,7 @@ const ProfileCard = () => {
                     <span> Primary </span> <span> (310)-699-0221 </span>
                 </Col>
                 <Col sm={3} className="info-card">
-                    <span className="text-danger"> <FaMapMarkerAlt size={20}/> </span> <span> 3002 carolwood LN Torrance, CA 90505-7110 </span>
+                    <span className="text-danger"> <FaMapMarkerAlt size={20} /> </span> <span> 3002 carolwood LN Torrance, CA 90505-7110 </span>
                 </Col>
             </Row>
         </div>
@@ -238,9 +237,6 @@ const SubCommuncations = () => {
     )
 }
 function Dashboard() {
-
-    const root = document.documentElement;
-
     const clickedToyota = (elem) => {
 
     }
